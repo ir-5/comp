@@ -41,7 +41,7 @@ export function useStreaks() {
         const yesterday = addDaysKey(date, -1);
         const continuing = rec.lastCompletedDate === yesterday;
         const currentCount = continuing ? rec.currentCount + 1 : 1;
-        const completedDates = [...new Set([date, ...rec.completedDates])]
+        const completedDates = Array.from(new Set([date, ...rec.completedDates]))
           .sort()
           .slice(-60);
 
