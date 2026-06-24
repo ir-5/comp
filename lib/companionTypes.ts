@@ -130,7 +130,7 @@ export const DEFAULT_HOME_CONFIG: HomeConfig = {
     whatToDoToday: true,
     noteBanner: true,
     mood: true,
-    parking: true,
+    parking: false,  // Hidden by default per user request
     upcomingEvents: true,
     statsStrip: true,
     quickTimer: true,
@@ -200,9 +200,18 @@ export const SLOT_DEFAULT_TIME: Record<MedSlot, string> = {
 
 // ---- Appearance / themes ----
 
-export type ThemeKey = 'ember' | 'mist' | 'neutral';
-export const THEMES: ThemeKey[] = ['ember', 'mist', 'neutral'];
-export const DEFAULT_THEME: ThemeKey = 'neutral';
+export type ThemeKey = 'blossom' | 'lavender' | 'ocean' | 'matcha' | 'sunset' | 'midnight';
+export const THEMES: ThemeKey[] = ['blossom', 'lavender', 'ocean', 'matcha', 'sunset', 'midnight'];
+export const DEFAULT_THEME: ThemeKey = 'blossom';
+
+export const THEME_META: Record<ThemeKey, { emoji: string; name: string }> = {
+  blossom: { emoji: '🌸', name: 'Blossom' },
+  lavender: { emoji: 'lavender', name: 'Lavender' },
+  ocean: { emoji: '🌊', name: 'Ocean' },
+  matcha: { emoji: '🍵', name: 'Matcha' },
+  sunset: { emoji: '🍑', name: 'Sunset' },
+  midnight: { emoji: '🌙', name: 'Midnight' },
+};
 
 // ---- Privacy / permissions ----
 

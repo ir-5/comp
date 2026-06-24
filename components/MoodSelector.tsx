@@ -33,27 +33,27 @@ export default function MoodSelector({ customQuestion }: { customQuestion?: stri
 
   return (
     <div data-testid="mood-selector">
-      <p className="text-sm font-medium text-muted-foreground mb-3">{customQuestion || 'How are you feeling today?'}</p>
-      <div className="flex gap-2">
+      <p className="text-sm font-medium text-muted-foreground mb-2">{customQuestion || 'How are you feeling today?'}</p>
+      <div className="flex gap-1.5">
         {MOODS.map(mood => (
           <button
             key={mood.key}
             data-testid={`mood-btn-${mood.key}`}
             onClick={() => selectMood(mood)}
             className={cn(
-              'flex-1 flex flex-col items-center gap-1 py-2 px-1 rounded-xl border transition-all duration-200 active:scale-95',
+              'flex-1 flex flex-col items-center gap-0.5 py-1.5 px-1 rounded-lg border transition-all duration-200 active:scale-95',
               currentMood?.key === mood.key
                 ? 'border-[var(--brand-primary)] bg-[var(--brand-primary)] shadow-sm'
                 : 'border-[hsl(35_25%_88%)] bg-white hover:bg-[#f8f5f0]'
             )}
           >
-            <span className="text-xl">{mood.emoji}</span>
-            <span className="text-[10px] font-medium text-foreground/70">{mood.label}</span>
+            <span className="text-base leading-none">{mood.emoji}</span>
+            <span className="text-[9px] font-medium text-foreground/70 leading-none">{mood.label}</span>
           </button>
         ))}
       </div>
       {showAffirmation && affirmation && (
-        <div className="mt-3 p-3 bg-[var(--brand-secondary)] rounded-xl text-sm text-[hsl(220_30%_30%)] animate-in fade-in slide-in-from-bottom-2 duration-300">
+        <div className="mt-2 p-2.5 bg-[var(--brand-secondary)] rounded-xl text-sm text-[hsl(220_30%_30%)] animate-in fade-in slide-in-from-bottom-2 duration-300">
           {affirmation}
         </div>
       )}

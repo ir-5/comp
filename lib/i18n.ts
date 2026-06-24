@@ -366,6 +366,26 @@ export const strings: Record<Language, Record<string, string>> = {
     theme_ember_desc: 'Warm and cozy, with soft peach tones.',
     theme_mist: 'Mist',
     theme_mist_desc: 'Cool and calm, with gentle blue tones.',
+    choose_theme: 'Choose a theme that feels right for you.',
+
+    // Tracker - Location
+    location_disabled_title: 'Location access needed',
+    location_disabled_desc: 'Enable location in Settings > Privacy to save parking spots and track items.',
+    enable_location: 'Enable Location',
+    clear: 'Clear',
+    update_location: 'Update location',
+    save_current_location: 'Save current location',
+    find_my_items: 'Find My Items',
+    item_name_placeholder: 'What did you lose? (e.g. keys)',
+    item_location_placeholder: 'Where did you put it? (e.g. kitchen counter)',
+    no_tracked_items: 'Nothing tracked yet — add items you tend to lose!',
+    saved_locations: 'Saved Locations',
+    location_name_placeholder: 'Name (e.g. Home, Work)',
+    address_placeholder: 'Address',
+    no_saved_locations: 'No saved locations yet.',
+    location_history: 'Location History',
+    clear_all: 'Clear all',
+    remaining: 'remaining',
 
     // Profile
     display_name: 'Display name',
@@ -848,6 +868,26 @@ export const strings: Record<Language, Record<string, string>> = {
     theme_ember_desc: 'دافئ ومريح بدرجات الخوخ الناعمة.',
     theme_mist: 'ضباب',
     theme_mist_desc: 'بارد وهادئ بدرجات الأزرق اللطيفة.',
+    choose_theme: 'اختر مظهراً يناسبك.',
+
+    // Tracker - Location
+    location_disabled_title: 'الوصول للموقع مطلوب',
+    location_disabled_desc: 'فعّل الموقع في الإعدادات > الخصوصية لحفظ أماكن وقوف السيارة وتتبع الأغراض.',
+    enable_location: 'تفعيل الموقع',
+    clear: 'مسح',
+    update_location: 'تحديث الموقع',
+    save_current_location: 'حفظ الموقع الحالي',
+    find_my_items: 'اعثر على أغراضي',
+    item_name_placeholder: 'ماذا فقدت؟ (مثال: المفاتيح)',
+    item_location_placeholder: 'أين وضعته؟ (مثال: طاولة المطبخ)',
+    no_tracked_items: 'لم يتم تتبع شيء بعد — أضف أشياء تميل لفقدانها!',
+    saved_locations: 'الأماكن المحفوظة',
+    location_name_placeholder: 'الاسم (مثال: البيت، العمل)',
+    address_placeholder: 'العنوان',
+    no_saved_locations: 'لا توجد أماكن محفوظة بعد.',
+    location_history: 'سجل المواقع',
+    clear_all: 'مسح الكل',
+    remaining: 'متبقي',
 
     // Profile
     display_name: 'الاسم المعروض',

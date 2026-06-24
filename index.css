@@ -128,79 +128,229 @@
   --shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* ---- Brand color tokens (themable). Neutral = original palette. ---- */
+/* ---- Brand color tokens (themable). ---- */
+
+/* Blossom — soft feminine pastel pink */
 :root,
-[data-theme="neutral"] {
-  --brand-surface: #FDFBF7;
-  --brand-primary: #D1E7DD;
-  --brand-secondary: #E2EAFC;
-  --brand-accent: hsl(150 30% 45%);
-  --brand-accent-deep: hsl(150 20% 25%);
-  --brand-accent-soft: hsl(150 32% 78%);
-}
-
-/* Ember — warm, cozy peach/terracotta */
-[data-theme="ember"] {
-  --background: 28 55% 97%;
-  --card: 30 45% 99%;
-  --card-border: 24 35% 86%;
-  --popover: 30 45% 99%;
-  --popover-border: 24 35% 86%;
-  --primary: 22 70% 85%;
-  --primary-foreground: 18 45% 28%;
-  --secondary: 16 75% 90%;
-  --secondary-foreground: 18 45% 30%;
-  --accent: 22 70% 85%;
-  --accent-foreground: 18 45% 28%;
-  --muted: 28 35% 94%;
-  --muted-foreground: 20 15% 42%;
-  --input: 24 35% 86%;
-  --ring: 22 65% 64%;
-  --border: 24 35% 86%;
-  --sidebar: 28 55% 97%;
-  --sidebar-primary: 22 70% 85%;
-  --sidebar-primary-foreground: 18 45% 28%;
-  --sidebar-ring: 22 65% 68%;
-  --radius: 1.25rem;
-
-  --brand-surface: #FFF6EE;
-  --brand-primary: #F6D7C0;
-  --brand-secondary: #FBE0CE;
-  --brand-accent: hsl(20 70% 52%);
-  --brand-accent-deep: hsl(18 45% 30%);
-  --brand-accent-soft: hsl(24 72% 82%);
-}
-
-/* Mist — cool, calm aqua/blue */
-[data-theme="mist"] {
-  --background: 200 45% 98%;
+[data-theme="blossom"] {
+  --background: 340 80% 98%;
+  --foreground: 210 20% 23%;
   --card: 0 0% 100%;
-  --card-border: 200 25% 86%;
+  --card-foreground: 210 20% 23%;
+  --card-border: 330 30% 88%;
   --popover: 0 0% 100%;
-  --popover-border: 200 25% 86%;
-  --primary: 195 42% 85%;
-  --primary-foreground: 200 38% 25%;
-  --secondary: 215 58% 92%;
-  --secondary-foreground: 215 38% 30%;
-  --accent: 195 42% 85%;
-  --accent-foreground: 200 38% 25%;
-  --muted: 200 28% 94%;
-  --muted-foreground: 205 14% 42%;
-  --input: 200 25% 86%;
-  --ring: 195 48% 58%;
-  --border: 200 25% 86%;
-  --sidebar: 200 45% 98%;
-  --sidebar-primary: 195 42% 85%;
-  --sidebar-primary-foreground: 200 38% 25%;
-  --sidebar-ring: 195 48% 62%;
+  --popover-foreground: 210 20% 23%;
+  --popover-border: 330 30% 88%;
+  --primary: 330 60% 85%;
+  --primary-foreground: 330 40% 25%;
+  --secondary: 320 50% 92%;
+  --secondary-foreground: 320 30% 30%;
+  --muted: 340 40% 94%;
+  --muted-foreground: 340 15% 42%;
+  --accent: 330 60% 85%;
+  --accent-foreground: 330 40% 25%;
+  --destructive: 35 80% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 330 30% 88%;
+  --ring: 330 50% 65%;
+  --border: 330 30% 88%;
+  --sidebar: 340 80% 98%;
+  --sidebar-primary: 330 60% 85%;
+  --sidebar-primary-foreground: 330 40% 25%;
+  --sidebar-ring: 330 50% 65%;
+  --radius: 1rem;
+
+  --brand-surface: #FFF1F7;
+  --brand-primary: #F9A8D4;
+  --brand-secondary: #FBCFE8;
+  --brand-accent: #EC4899;
+  --brand-accent-deep: #BE185D;
+  --brand-accent-soft: #FBCFE8;
+}
+
+/* Lavender — calming purple/lilac */
+[data-theme="lavender"] {
+  --background: 270 50% 98%;
+  --foreground: 270 20% 23%;
+  --card: 0 0% 100%;
+  --card-foreground: 270 20% 23%;
+  --card-border: 270 30% 88%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 270 20% 23%;
+  --popover-border: 270 30% 88%;
+  --primary: 270 50% 85%;
+  --primary-foreground: 270 40% 25%;
+  --secondary: 260 40% 92%;
+  --secondary-foreground: 260 30% 30%;
+  --muted: 270 30% 94%;
+  --muted-foreground: 270 15% 42%;
+  --accent: 270 50% 85%;
+  --accent-foreground: 270 40% 25%;
+  --destructive: 35 80% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 270 30% 88%;
+  --ring: 270 40% 65%;
+  --border: 270 30% 88%;
+  --sidebar: 270 50% 98%;
+  --sidebar-primary: 270 50% 85%;
+  --sidebar-primary-foreground: 270 40% 25%;
+  --sidebar-ring: 270 40% 65%;
+  --radius: 1rem;
+
+  --brand-surface: #F5F3FF;
+  --brand-primary: #DDD6FE;
+  --brand-secondary: #EDE9FE;
+  --brand-accent: #7C3AED;
+  --brand-accent-deep: #5B21B6;
+  --brand-accent-soft: #DDD6FE;
+}
+
+/* Ocean — fresh blue/teal */
+[data-theme="ocean"] {
+  --background: 200 60% 98%;
+  --foreground: 200 30% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 200 30% 20%;
+  --card-border: 200 30% 88%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 200 30% 20%;
+  --popover-border: 200 30% 88%;
+  --primary: 195 60% 75%;
+  --primary-foreground: 195 50% 22%;
+  --secondary: 200 50% 90%;
+  --secondary-foreground: 200 40% 28%;
+  --muted: 200 30% 94%;
+  --muted-foreground: 200 15% 40%;
+  --accent: 195 60% 75%;
+  --accent-foreground: 195 50% 22%;
+  --destructive: 35 80% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 200 30% 88%;
+  --ring: 195 50% 55%;
+  --border: 200 30% 88%;
+  --sidebar: 200 60% 98%;
+  --sidebar-primary: 195 60% 75%;
+  --sidebar-primary-foreground: 195 50% 22%;
+  --sidebar-ring: 195 50% 55%;
+  --radius: 0.875rem;
+
+  --brand-surface: #E0F7FA;
+  --brand-primary: #80DEEA;
+  --brand-secondary: #B2EBF2;
+  --brand-accent: #00BCD4;
+  --brand-accent-deep: #00838F;
+  --brand-accent-soft: #B2EBF2;
+}
+
+/* Matcha — earthy green */
+[data-theme="matcha"] {
+  --background: 80 40% 97%;
+  --foreground: 80 20% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 80 20% 20%;
+  --card-border: 80 25% 86%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 80 20% 20%;
+  --popover-border: 80 25% 86%;
+  --primary: 100 35% 75%;
+  --primary-foreground: 100 30% 18%;
+  --secondary: 90 30% 90%;
+  --secondary-foreground: 90 25% 25%;
+  --muted: 80 25% 93%;
+  --muted-foreground: 80 15% 40%;
+  --accent: 100 35% 75%;
+  --accent-foreground: 100 30% 18%;
+  --destructive: 35 80% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 80 25% 86%;
+  --ring: 100 35% 45%;
+  --border: 80 25% 86%;
+  --sidebar: 80 40% 97%;
+  --sidebar-primary: 100 35% 75%;
+  --sidebar-primary-foreground: 100 30% 18%;
+  --sidebar-ring: 100 35% 45%;
   --radius: 0.75rem;
 
-  --brand-surface: #F2F8FB;
-  --brand-primary: #CFE6EE;
-  --brand-secondary: #DCE7F7;
-  --brand-accent: hsl(195 52% 42%);
-  --brand-accent-deep: hsl(200 38% 26%);
-  --brand-accent-soft: hsl(195 46% 80%);
+  --brand-surface: #F1F8E9;
+  --brand-primary: #C5E1A5;
+  --brand-secondary: #DCEDC8;
+  --brand-accent: #7CB342;
+  --brand-accent-deep: #558B2F;
+  --brand-accent-soft: #DCEDC8;
+}
+
+/* Sunset — warm peach/coral */
+[data-theme="sunset"] {
+  --background: 25 60% 97%;
+  --foreground: 25 30% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 25 30% 20%;
+  --card-border: 25 35% 86%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 25 30% 20%;
+  --popover-border: 25 35% 86%;
+  --primary: 20 70% 80%;
+  --primary-foreground: 20 50% 22%;
+  --secondary: 30 60% 90%;
+  --secondary-foreground: 30 40% 28%;
+  --muted: 25 30% 94%;
+  --muted-foreground: 25 15% 42%;
+  --accent: 20 70% 80%;
+  --accent-foreground: 20 50% 22%;
+  --destructive: 35 80% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 25 35% 86%;
+  --ring: 20 65% 55%;
+  --border: 25 35% 86%;
+  --sidebar: 25 60% 97%;
+  --sidebar-primary: 20 70% 80%;
+  --sidebar-primary-foreground: 20 50% 22%;
+  --sidebar-ring: 20 65% 55%;
+  --radius: 1.125rem;
+
+  --brand-surface: #FFF8F0;
+  --brand-primary: #FFCCBC;
+  --brand-secondary: #FFAB91;
+  --brand-accent: #FF7043;
+  --brand-accent-deep: #E64A19;
+  --brand-accent-soft: #FFCCBC;
+}
+
+/* Midnight — deep dark blue */
+[data-theme="midnight"] {
+  --background: 220 40% 12%;
+  --foreground: 220 20% 90%;
+  --card: 220 35% 18%;
+  --card-foreground: 220 20% 90%;
+  --card-border: 220 30% 28%;
+  --popover: 220 35% 18%;
+  --popover-foreground: 220 20% 90%;
+  --popover-border: 220 30% 28%;
+  --primary: 220 50% 45%;
+  --primary-foreground: 220 20% 95%;
+  --secondary: 230 40% 35%;
+  --secondary-foreground: 220 20% 90%;
+  --muted: 220 30% 22%;
+  --muted-foreground: 220 15% 65%;
+  --accent: 220 50% 45%;
+  --accent-foreground: 220 20% 95%;
+  --destructive: 35 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --input: 220 30% 28%;
+  --ring: 220 50% 55%;
+  --border: 220 30% 28%;
+  --sidebar: 220 40% 12%;
+  --sidebar-primary: 220 50% 45%;
+  --sidebar-primary-foreground: 220 20% 95%;
+  --sidebar-ring: 220 50% 55%;
+  --radius: 1rem;
+
+  --brand-surface: #1A1F3C;
+  --brand-primary: #3B4A8A;
+  --brand-secondary: #2D3A6A;
+  --brand-accent: #6B7FD4;
+  --brand-accent-deep: #8FA4E8;
+  --brand-accent-soft: #4A5B9A;
 }
 
 @layer base {
